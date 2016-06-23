@@ -7,26 +7,42 @@
 </head>
 <body>
 
-  <div>
+  <header aria-roledescription="banner">
     <h1>My Awesome Blog</h1>
     <p>Where I post about stuff</p>
-  </div>
+  </header> 
+
+  <nav>
+    <h2>Blog Posts</h2>
+    <ul>
+      <li><a href="#current">Current</a></li>
+      <li><a href="#old">Old</a></li>
+      <li><a href="#older">Older</a></li>
+    </ul>
+  </nav>
 
   <div>
     <div>
       <div>
-        <h2>Check it out!</h2>
+        <h2 id="current">Check it out!</h2>
         <p>Posted today</p>
       </div>
       <p>Check out this cute puppy!</p>
-      <p><img src="img/gzvWJQMuibX5ISaVpCu17h.jpg"></p>
+      <p><img src="img/gzvWJQMuibX5ISaVpCu17h.jpg" alt="a husky pup"></p>
       <p>Also, lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam ea amet rem vel ipsa odit esse iste facilis inventore earum.</p>
       <p>Lorem ipsum dolor sit!</p>
     </div>
 
+    <section>
+      <form role ="form">
+        <label for="commentbox">Leave a comment:</label>
+        <input type="text" name="comment" id="commentbox"> 
+      </form>
+    </section>
+
     <div>
       <div>
-        <h2>An update</h2>
+        <h2 id="old">An update</h2>
         <p>Posted yesterday</p>
       </div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi perferendis magni odio soluta iure, culpa libero reiciendis hic. Possimus quis, fuga, quos aspernatur velit necessitatibus ex blanditiis asperiores magnam molestiae.</p>
@@ -42,7 +58,7 @@
 
     <div>
       <div>
-        <h2>A blog post!</h2>
+        <h2 id ="older">A blog post!</h2>
         <p>Posted last week</p>
       </div>
       <p>You're looking at this? Really? Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
